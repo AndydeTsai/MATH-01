@@ -7,10 +7,8 @@ using namespace std;
 
 int SUM(int input)
 {
-    int i, out=0;
-    for(i=1;i<=input;i++){
-       out=out+i;
-    }
+    int out=0;
+    out=((input+1)*input)/2;
     return out;
 }
 
@@ -55,7 +53,7 @@ int main(int argc, char *argv[])
     cout<<"type a number"<<endl;
     cin>>input;
     sum=SUM(input);                                                             //throw a number to function"SUM"
-    cout<<sum<<endl<<endl;
+    cout<<"Sum of 1 to "<<input<<" resault with:"<<sum<<endl<<endl;
     Prime=CHK(input);                                                           //throw anumber to check if it is a Prime
     if(Prime==true)
     {
